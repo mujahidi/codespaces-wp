@@ -1,0 +1,25 @@
+{
+	"name": "${localWorkspaceFolderBasename}",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "wordpress",
+	"forwardPorts": [ 8080 ],
+	"workspaceFolder": "/var/www/html/",
+	"postCreateCommand": "/var/www/html/.devcontainer/setup.sh",
+	"remoteUser": "www-data",
+	"customizations": {
+		"vscode": {
+		  "extensions": [
+			"formulahendry.auto-rename-tag",
+			"aaron-bond.better-comments",
+			"donjayamanne.jquerysnippets",
+			"PKief.material-icon-theme",
+			"wordpresstoolbox.wordpress-toolbox",
+			"xdebug.php-pack",
+			"patbenatar.advanced-new-file"
+		  ]
+		}
+	},
+	"features": {
+		"ghcr.io/guiyomh/features/vim:0": {}
+	}
+}
