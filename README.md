@@ -1,1 +1,1 @@
-# codespaces-wp
+# Development Container for WordPress Development
