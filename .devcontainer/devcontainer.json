@@ -15,11 +15,13 @@
 			"PKief.material-icon-theme",
 			"wordpresstoolbox.wordpress-toolbox",
 			"xdebug.php-pack",
-			"patbenatar.advanced-new-file"
+			"patbenatar.advanced-new-file",
+			"editorconfig.editorconfig"
 		  ]
 		}
 	},
 	"features": {
-		"ghcr.io/guiyomh/features/vim:0": {}
+		"ghcr.io/guiyomh/features/vim:0": {},
+		"ghcr.io/devcontainers-contrib/features/tmux-apt-get:1": {}
 	}
 }
