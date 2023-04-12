@@ -1,0 +1,36 @@
+{
+  "name": "WP DevContainer",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Mujahid I.",
+  "license": "GPL-2.0-or-later",
+  "keywords": [
+    "WordPress",
+    "Theme",
+    "Plugin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mujahidi/wp-devcontainer.git"
+  },
+  "devDependencies": {
+    "@popperjs/core": "^2.11.7",
+    "@wordpress/scripts": "^26.0.0",
+    "bootstrap": "^5.2.3",
+    "dir-archiver": "^1.1.1",
+    "rtlcss": "^3.5.0",
+    "sass": "^1.59.3",
+    "sass-rem": "^3.0.0",
+    "webpack": "^5.76.3",
+    "webpack-cli": "^5.0.1"
+  },
+  "scripts": {
+    "watch": "sass sass/style.scss style.css --watch --source-map",
+    "dev": "webpack --mode development --watch",
+    "compile:css": "node-sass sass/ -o ./ && stylelint '*.css' --fix || true && stylelint '*.css' --fix",
+    "compile:rtl": "rtlcss style.css style-rtl.css",
+    "lint:scss": "wp-scripts lint-style 'sass/**/*.scss'",
+    "lint:js": "wp-scripts lint-js 'js/*.js'",
+    "bundle": "dir-archiver --src . --dest ../_s.zip --exclude .DS_Store .stylelintrc.json .eslintrc .git .gitattributes .github .gitignore README.md composer.json composer.lock node_modules vendor package-lock.json package.json .travis.yml phpcs.xml.dist sass style.css.map yarn.lock"
+  }
+}
