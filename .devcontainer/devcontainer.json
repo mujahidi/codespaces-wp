@@ -22,6 +22,7 @@
 	},
 	"features": {
 		"ghcr.io/guiyomh/features/vim:0": {},
-		"ghcr.io/devcontainers-contrib/features/tmux-apt-get:1": {}
+		"ghcr.io/devcontainers-contrib/features/tmux-apt-get:1": {},
+		"ghcr.io/devcontainers/features/github-cli:1": {}
 	}
 }
