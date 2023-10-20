@@ -2,7 +2,7 @@
 	"name": "${localWorkspaceFolderBasename}",
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "wordpress",
-	"forwardPorts": [ 8080 ],
+	"forwardPorts": [ 8080, 8081 ],
 	"workspaceFolder": "/var/www/html/",
 	"postCreateCommand": "/var/www/html/.devcontainer/setup.sh",
 	"remoteUser": "www-data",
